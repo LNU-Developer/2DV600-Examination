@@ -45,7 +45,8 @@ public class IntBST {
 
         void add(int n) {
             BST node = new BST(n); // I create the node that is supposed to be inserted
-            BST previous = null; // I need to keep a flag of the previous node in order to
+            BST previous = null; // I need to keep a flag of the previous node in order to be able to add to that
+                                 // reference later
 
             // I'm starting from root but creating a temp value that I can traverse with new
             // values as I go along
@@ -66,9 +67,9 @@ public class IntBST {
             // When there are no more nodes to tranverse I insert the value into the
             // previous nodes tree, either left or right.
             if (previous.value > n)
-                previous.left = node;
+                previous.left = node; // Adding to root through the reference handling i did above.
             else
-                previous.right = node;
+                previous.right = node; // Adding to root through the reference handling i did above.
         }
 
         boolean contains(int n) {
