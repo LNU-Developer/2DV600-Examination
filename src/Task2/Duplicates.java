@@ -17,6 +17,16 @@ import java.util.*;
  */
 
 public class Duplicates {
+    public static void main(String[] args) {
+        ArrayList<String> test = new ArrayList<String>();
+        test.add("a");
+        test.add("b");
+        test.add("c");
+        System.out.println(hasDuplicates(test));
+        test.add("a");
+        System.out.println(hasDuplicates(test));
+    }
+
     static public boolean hasDuplicates(ArrayList<String> list) {
         Set<String> distinctStrings = new HashSet<>(); // O(1)
         if (list.size() > 0) // O(1)
