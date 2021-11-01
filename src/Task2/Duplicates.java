@@ -25,6 +25,10 @@ public class Duplicates {
         System.out.println(hasDuplicates(test));
         test.add("a");
         System.out.println(hasDuplicates(test));
+
+        ArrayList<String> test2 = new ArrayList<String>();
+        test.add("a");
+        System.out.println(hasDuplicates(test2));
     }
 
     static public boolean hasDuplicates(ArrayList<String> list) {
