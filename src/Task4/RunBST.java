@@ -16,16 +16,17 @@ package Task4;
 
 public class RunBST {
     public static void main(String[] args) throws Exception {
-        IntBST tree = new IntBST();
-        tree.add(1);
-        tree.add(10);
-        tree.add(15);
-        tree.add(20);
-        tree.add(5);
-        tree.add(6);
-        tree.add(2);
-        System.out.println("Test");
-        System.out.println(tree.contains(6));
-        System.out.println(tree.contains(100));
+        IntBST binaryTree = new IntBST();
+        binaryTree.add(1);
+        binaryTree.add(10);
+        binaryTree.add(15);
+        binaryTree.add(20);
+        binaryTree.add(5);
+        binaryTree.add(6);
+        binaryTree.add(2);
+        System.out.println("Test"); // Was not able to run and test this code properly as I had some issues with
+                                    // Java package handling in the end.
+        System.out.println(binaryTree.contains(6));
+        System.out.println(binaryTree.contains(100));
     }
 }
